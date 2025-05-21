@@ -1,1 +1,134 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact List and Registration</title>
+</head>
+<body>
+  <h2>Ordered List</h2>
+  <ol type="I">
+    <li>Introduction to HTML5</li>
+    <li>Images and Multimedia Elements</li>
+    <li>Lists and Tables</li>
+    <li>Forms and Validation</li>
+    <li>Advanced Features</li>
+  </ol>
+
+  <h2>Kenyan Landscape</h2>
+  <img 
+    src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg" 
+    alt="Maasai Mara Landscape, Kenya" 
+    width="600"
+  />
+
+  <h2>Contact List</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Wanjiku Mwangi</td>
+        <td>Kahawa Wendani, Nairobi</td>
+        <td>+254 712 345 678</td>
+        <td>wanjiku.mwangi@example.co.ke</td>
+      </tr>
+      <tr>
+        <td>Wamalwa Otieno</td>
+        <td>Kisumu Town, Kisumu</td>
+        <td>+254 733 987 654</td>
+        <td>wamalwa.otieno@example.co.ke</td>
+      </tr>
+      <tr>
+        <td>Njoki Wambui</td>
+        <td>Mombasa CBD, Mombasa</td>
+        <td>+254 701 234 567</td>
+        <td>njoki.wambui@example.co.ke</td>
+      </tr>
+      <tr>
+        <td>Musyoka Onyango</td>
+        <td>Ngong Rd, Nairobi</td>
+        <td>+254 722 876 543</td>
+        <td>musyoka.onyango@example.co.ke</td>
+      </tr>
+      <tr>
+        <td>Thumbi Wairimu</td>
+        <td>Eldoret Town, Uasin Gishu</td>
+        <td>+254 710 112 233</td>
+        <td>thumbi.wairimu@example.co.ke</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Registration Form</h2>
+  <form action="#" method="post" novalidate>
+    <label for="name">Name:</label><br />
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your full name"
+      required
+      minlength="3"
+      maxlength="50"
+    /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="example@example.co.ke"
+      required
+    /><br /><br />
+
+    <label for="password">Password:</label><br />
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Create a password"
+      required
+      minlength="6"
+    /><br /><br />
+
+    <label for="dob">Date of Birth:</label><br />
+    <input type="date" id="dob" name="dob" required /><br /><br />
+
+    <label for="county">County:</label><br />
+    <select id="county" name="county" required>
+      <option value="" disabled selected>Select your county</option>
+      <option value="nairobi">Nairobi</option>
+      <option value="mombasa">Mombasa</option>
+      <option value="kisumu">Kisumu</option>
+      <option value="eldoret">Uasin Gishu (Eldoret)</option>
+      <option value="nyeri">Nyeri</option>
+    </select><br /><br />
+
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male">Male</label><br />
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label><br />
+    <input type="radio" id="other" name="gender" value="other" />
+    <label for="other">Other</label><br /><br />
+
+    <p>Interests:</p>
+    <input type="checkbox" id="coding" name="interests" value="coding" />
+    <label for="coding">Coding</label><br />
+    <input type="checkbox" id="music" name="interests" value="music" />
+    <label for="music">Music</label><br />
+    <input type="checkbox" id="sports" name="interests" value="sports" />
+    <label for="sports">Sports</label><br /><br />
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
