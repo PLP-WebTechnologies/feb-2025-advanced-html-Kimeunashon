@@ -2,175 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advanced HTML5 Elements and Forms</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f5f5f5;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 30px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-    input, select {
-      padding: 8px;
-      width: 100%;
-      box-sizing: border-box;
-      margin-top: 5px;
-    }
-    .form-section {
-      margin-bottom: 15px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kenyan Contacts and Registration Form</title>
 </head>
 <body>
-
-  <h1>Advanced HTML5 Elements and Forms</h1>
+  <h1>Learning Resources</h1>
 
   <!-- Ordered list with Roman numerals -->
-  <h2>I. Roman Numeral List</h2>
-  <ol type="I">
-    <li>Introduction</li>
-    <li>Content Overview</li>
-    <li>Objectives</li>
-    <li>Execution</li>
-    <li>Conclusion</li>
-  </ol>
+  <section>
+    <h2>Topics to Cover</h2>
+    <ol type="I">
+      <li>HTML5 Structure</li>
+      <li>Multimedia Elements</li>
+      <li>Tables and Lists</li>
+      <li>Forms and Validation</li>
+      <li>Responsive Design</li>
+    </ol>
+  </section>
 
-  <!-- External image from Pexels -->
-  <h2>II. External Image</h2>
-  <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Nature from Pexels" width="100%" />
+  <!-- External image from pexels.com -->
+  <section>
+    <h2>Kenyan Landscape</h2>
+    <img
+      src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg"
+      alt="Maasai Mara, Kenya"
+      width="600"
+      loading="lazy"
+    />
+  </section>
 
-  <!-- Contact Table -->
-  <h2>III. Contact Table</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Mobile</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Jane Doe</td>
-        <td>123 Elm Street</td>
-        <td>+123456789</td>
-        <td>jane@example.com</td>
-      </tr>
-      <tr>
-        <td>John Smith</td>
-        <td>456 Oak Avenue</td>
-        <td>+987654321</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Alice Johnson</td>
-        <td>789 Maple Road</td>
-        <td>+111222333</td>
-        <td>alice@example.com</td>
-      </tr>
-      <tr>
-        <td>Bob Brown</td>
-        <td>321 Pine Blvd</td>
-        <td>+444555666</td>
-        <td>bob@example.com</td>
-      </tr>
-      <tr>
-        <td>Maria Lee</td>
-        <td>654 Cedar Lane</td>
-        <td>+777888999</td>
-        <td>maria@example.com</td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Contacts table -->
+  <section>
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wanjiku Mwangi</td>
+          <td>Kahawa Wendani, Nairobi</td>
+          <td>+254 712 345 678</td>
+          <td>wanjiku.mwangi@example.co.ke</td>
+        </tr>
+        <tr>
+          <td>Wamalwa Otieno</td>
+          <td>Kisumu Town, Kisumu</td>
+          <td>+254 733 987 654</td>
+          <td>wamalwa.otieno@example.co.ke</td>
+        </tr>
+        <tr>
+          <td>Njoki Wambui</td>
+          <td>Mombasa CBD, Mombasa</td>
+          <td>+254 701 234 567</td>
+          <td>njoki.wambui@example.co.ke</td>
+        </tr>
+        <tr>
+          <td>Musyoka Onyango</td>
+          <td>Ngong Rd, Nairobi</td>
+          <td>+254 722 876 543</td>
+          <td>musyoka.onyango@example.co.ke</td>
+        </tr>
+        <tr>
+          <td>Thumbi Wairimu</td>
+          <td>Eldoret Town, Uasin Gishu</td>
+          <td>+254 710 112 233</td>
+          <td>thumbi.wairimu@example.co.ke</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-  <!-- Registration Form -->
-  <h2>IV. Registration Form</h2>
-  <form action="#" method="post">
+  <!-- Registration form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" novalidate>
+      <label for="name">Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+        minlength="3"
+        maxlength="50"
+      /><br /><br />
 
-    <!-- Name -->
-    <div class="form-section">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
-    </div>
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@example.co.ke"
+        required
+      /><br /><br />
 
-    <!-- Email -->
-    <div class="form-section">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required />
-    </div>
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Create a password"
+        required
+        minlength="6"
+      /><br /><br />
 
-    <!-- Password -->
-    <div class="form-section">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
-    </div>
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" name="dob" required /><br /><br />
 
-    <!-- Date -->
-    <div class="form-section">
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required />
-    </div>
+      <label for="county">County:</label><br />
+      <select id="county" name="county" required>
+        <option value="" disabled selected>Select your county</option>
+        <option value="nairobi">Nairobi</option>
+        <option value="mombasa">Mombasa</option>
+        <option value="kisumu">Kisumu</option>
+        <option value="eldoret">Uasin Gishu (Eldoret)</option>
+        <option value="nyeri">Nyeri</option>
+      </select><br /><br />
 
-    <!-- Dropdown -->
-    <div class="form-section">
-      <label for="country">Select your country:</label>
-      <select id="country" name="country" required>
-        <option value="">--Select--</option>
-        <option value="kenya">Kenya</option>
-        <option value="uganda">Uganda</option>
-        <option value="tanzania">Tanzania</option>
-      </select>
-    </div>
-
-    <!-- Radio Buttons -->
-    <div class="form-section">
-      <label>Gender:</label>
+      <p>Gender:</p>
       <input type="radio" id="male" name="gender" value="male" required />
-      <label for="male">Male</label>
+      <label for="male">Male</label><br />
       <input type="radio" id="female" name="gender" value="female" />
-      <label for="female">Female</label>
-    </div>
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
 
-    <!-- Checkboxes -->
-    <div class="form-section">
-      <label>Hobbies:</label>
-      <input type="checkbox" id="reading" name="hobbies" value="Reading" />
-      <label for="reading">Reading</label>
-      <input type="checkbox" id="traveling" name="hobbies" value="Traveling" />
-      <label for="traveling">Traveling</label>
-      <input type="checkbox" id="sports" name="hobbies" value="Sports" />
-      <label for="sports">Sports</label>
-    </div>
+      <p>Interests:</p>
+      <input type="checkbox" id="coding" name="interests" value="coding" />
+      <label for="coding">Coding</label><br />
+      <input type="checkbox" id="music" name="interests" value="music" />
+      <label for="music">Music</label><br />
+      <input type="checkbox" id="sports" name="interests" value="sports" />
+      <label for="sports">Sports</label><br /><br />
 
-    <!-- Submit Button -->
-    <div class="form-section">
-      <input type="submit" value="Register" />
-    </div>
-
-  </form>
-
+      <button type="submit">Register</button>
+    </form>
+  </section>
 </body>
 </html>
